@@ -23,9 +23,9 @@ jobs:
         npm install -g @vue/cli
     - name: npm build
       run: |
-        cd onthaal
+        cd materiaal
         npm install
-        cd onthaal
+        cd materiaal
         npm install
         cd ..
         npm run build
@@ -33,5 +33,5 @@ jobs:
         CI: true
     - uses: actions/upload-artifact@v1
       with:
-        name: onthaal.zip
-        path: onthaal/dist
+        name: materiaal.zip
+        path: materiaal/dist
